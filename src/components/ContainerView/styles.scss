@@ -1,0 +1,54 @@
+@import '../../scss/_colors.scss';
+
+.container-view {
+  height: 100vh;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  position: relative;
+  .view-left {
+    min-width: 200px !important;
+    max-width: 200px !important;
+    padding-top: 0;
+  }
+  .view-right {
+    padding: 0 !important;
+    height: 100vh;
+    width: 100vw;
+  }
+  .view-center {
+    padding: 0 !important;
+    position: relative;
+    height: calc(100vh - 50px);
+    .view-center-1440px {
+      padding: 0 !important;
+    }
+    .view-center-small {
+      width: calc(100% - 350px);
+      padding: 0 !important;
+    }
+    .pushable {
+      overflow: hidden !important;
+    }
+    .panel-1440px {
+      position: fixed;
+      cursor: pointer;
+      top: 0px;
+      left: 0px;
+    }
+    .close-panel {
+      position: absolute !important;
+      top: 18px !important;
+      left: 21px !important;
+      cursor: pointer !important;
+      width: 12.19px !important;
+      height: 12.19px !important;
+      color: $color-close !important;
+    }
+  }
+  .side-bar-panel-center {
+    .ui.vertical.menu {
+      flex-direction: unset;
+    }
+  }
+}

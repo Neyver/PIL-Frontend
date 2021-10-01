@@ -1,0 +1,40 @@
+@import '../../scss/_colors.scss';
+
+.header-menu {
+  margin-bottom: unset !important;
+  border-radius: unset !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-header !important;
+  height: 48px;
+  .options-items {
+    margin: auto !important;
+  }
+  .user-image {
+    padding: 0 8px !important;
+    color: $menu-header-item !important;
+  }
+  .icon-menu {
+    padding: 0 14px !important;
+    i.icon, i.icons {
+      font-size: 1.6em !important;
+    }
+  }
+  .options-user {
+    margin-right: 28px !important;
+    padding-right: 0 !important;
+    width: 216px;
+    justify-content: flex-end;
+  }
+  .logo-menu {
+    margin-left: 28px !important;
+    padding-left: 0 !important;
+    img {
+      height: 48px !important;
+    }
+  }
+  .item {
+    color: $menu-header-item !important;
+  }
+}

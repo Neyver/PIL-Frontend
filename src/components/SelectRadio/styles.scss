@@ -1,0 +1,17 @@
+@import "../../scss/_colors.scss";
+.customo-radio-item {
+  color: $color-blue !important;
+  label {
+    color: $color-blue !important;
+    padding-left: 15px !important;
+  }
+  label:after {
+    background: $color-blue !important;
+  }
+}
+
+.customo-radio-item-one {
+  label {
+    padding-left: 15px !important;
+  }
+}

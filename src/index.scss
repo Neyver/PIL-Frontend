@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.ui.modal.transition.visible.active {
+  &.confirmation-modal {
+    width: 593px !important;
+  }
+  >.confirm-modal-body.content {
+    >.ui.padded.middle.aligned.two.column.grid {
+      width: 500px !important;
+      >.fourteen.wide.column {
+        padding-left: unset !important;
+      }
+    }
+  }
+  >.actions.confirm-modal-actions {
+    margin-right: 50px !important;
+    padding-top: 30px !important;
+    >.button:first-child {
+      background-color: #0078ba;
+      color: white;
+    }
+  }
+}

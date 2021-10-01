@@ -1,0 +1,37 @@
+@import '../../../scss/_colors.scss';
+
+.confirm-modal-header {
+  border-bottom: none !important;
+  padding-bottom: unset !important;
+  background: $background-form !important;
+}
+
+.confirm-modal-body {
+  background: $background-form !important;
+  >.ui.padded.middle.aligned.two.column.grid {
+    >.two.wide.column {
+      >i {
+        font-size: 53px !important;
+        opacity: 0.5 !important;
+      }
+    }
+  }
+}
+
+.confirm-modal-actions {
+  border-top: none !important;
+  height: 84px !important;
+  float: right;
+  padding-right: 1.5rem !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  margin-right: 25px !important;
+  .button {
+    height: 38px !important;
+    width: 136px !important;
+    font-size: 14px !important;
+  }
+  .blue.button {
+    background-color: $primary-color-positive !important;
+  }
+}

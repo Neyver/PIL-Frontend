@@ -1,0 +1,120 @@
+@import "../../scss/_colors.scss";
+
+.custom-table {
+  .table-fixed {
+    overflow-x: hidden;
+    td {
+      border-top: 1px solid $border-color !important;
+      border-left: unset !important;
+      opacity: 1 !important;
+    }
+
+    .custom-hover {
+      height: 66px;
+
+      .custom-cell:last-child {
+        width: 64px;
+
+        a.item {
+          color: #8f949e;
+        }
+        a.item:hover {
+          background: none;
+        }
+
+        a.item:active {
+          opacity: 0.5;
+        }
+      }
+    }
+    .custom-hover:hover {
+      cursor: pointer;
+      background-color: $background-color-hover-row !important;
+      > .custom-cell {
+        .show-actions {
+          visibility: visible !important;
+          display: block !important;
+        }
+        .hide-actions {
+          display: none !important;
+          visibility: hidden !important;
+        }
+      }
+      .avatar {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    }
+    .custom-cell {
+      .show-actions {
+        visibility: hidden !important;
+        display: none !important;
+      }
+      .hide-actions {
+        display: none !important;
+        visibility: hidden !important;
+      }
+
+      .avatar {
+        margin: auto;
+        width: max-content;
+      }
+    }
+    .ui.table {
+      border-left: unset !important;
+      border-right: unset !important;
+    }
+    &.table-empty {
+      border-bottom: unset !important;
+      .ui.fixed.table {
+        border-bottom: unset !important;
+        tbody {
+          tr {
+            td {
+              border-bottom: unset !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ui.fixed.table {
+    background-color: $background-table !important;
+  }
+  .ui.fixed.table td {
+    text-overflow: unset !important;
+    overflow: unset !important;
+  }
+  .ui.table tr.active,
+  .ui.table td.active {
+    background: $background-active-row !important;
+  }
+  .table-header {
+    margin-bottom: unset !important;
+    border: unset !important;
+    thead {
+      th {
+        background-color: $background-table !important;
+      }
+    }
+  }
+
+  .custom-header {
+    overflow-y: scroll !important;
+    background-color: $background-table !important;
+  }
+
+  .custom-header::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .icon-sort {
+    display: inline;
+
+    i {
+      position: relative;
+      left: 5px;
+    }
+  }
+}

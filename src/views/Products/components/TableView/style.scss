@@ -1,0 +1,15 @@
+.product-table {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  height: calc(100% - 10px);
+  .colection-dropdown {
+    margin-bottom: 12px !important;
+    .container-colection-dropdown {
+      padding-bottom: 0 !important;
+    }
+    .colection-dropdown {
+      margin-bottom: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+$color-input: #317fc3;
+$border-color: #00000029;
+$icon-warning-color: #c7cbd2;
+$background-input: #e8ebf0;
+$background-error: #fef1f8;
+$label-error: #ba0823;
+
+.custom-select {
+  >.error.field {
+    >.ui.fluid.search.selection.dropdown.list-dropdown {
+      >.default.text {
+        color: $label-error !important;
+      }
+    }
+    >.ui.fluid.multiple.search.selection.dropdown.list-dropdown {
+      >.default.text {
+        color: $label-error !important;
+      }
+    }
+  }
+
+  .text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+  .error-message::after {
+    content: none !important;
+  }
+  .add-new-item {
+    border-top: 1px solid $border-color !important;
+    text-align: center !important;
+    font-weight: normal !important;
+    color: $color-input !important;
+  }
+  .message {
+    border-top: 1px solid $border-color !important;
+    padding-right: unset !important;
+    padding-left: unset !important;
+  }
+  .no-result-item {
+    text-align: center !important;
+    color: $color-input !important;
+    cursor: pointer !important;
+    .icon-warning {
+      color: $icon-warning-color !important;
+      font-size: 2.81em !important;
+    }
+  }
+}
+
+.input-item {
+  .input-new-label {
+    font-size: 14px;
+  }
+  input {
+    margin-bottom: 8px !important;
+    color: $color-input !important;
+  }
+  input::placeholder {
+    color: $color-input !important;
+  }
+  > .ui.fluid.action.input.new-item {
+    > input {
+      background-color: $background-input !important;
+      border: none !important;
+      color: $color-input !important;
+    }
+    > button {
+      margin-bottom: 8px !important;
+      width: 28px !important;
+      padding: 0 !important;
+    }
+    .close-icon {
+      background-color: $background-input !important;
+      border: none !important;
+      color: $color-input !important ;
+    }
+  }
+  .input-label {
+    color: $color-input !important ;
+    font-size: 14px;
+  }
+}
+
+.input-item-error {
+  .input-new-label {
+    color: $label-error;
+  }
+
+  .new-item {
+    input {
+      background-color: $background-error !important;
+      color: $label-error !important;
+    }
+    .close-icon {
+      background-color: $background-error !important;
+      color: $label-error !important ;
+    }
+  }
+  .input-label {
+    color: $label-error !important;
+  }
+}

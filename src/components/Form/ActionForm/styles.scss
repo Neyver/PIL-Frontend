@@ -1,0 +1,16 @@
+@import '../../../scss/_colors.scss';
+
+.actions-form {
+  display: flex;
+  margin-top: 0px !important;
+  .button-cancel {
+    margin-right: 16px !important;
+    height: 50px !important;
+    width: 100% !important;
+  }
+  .button-save {
+    height: 50px !important;
+    width: 100% !important;
+    background: $color-blue !important;
+  }
+}

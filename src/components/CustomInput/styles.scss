@@ -1,0 +1,11 @@
+.custom-input {
+  display: block;
+  label:first-child {
+    color: unset !important;
+    display: block !important;
+    margin: 8px 0px !important;
+  }
+  .error-message::after {
+    content: none !important;
+  }
+}

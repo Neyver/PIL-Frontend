@@ -1,0 +1,21 @@
+@import '../../scss/_colors.scss';
+
+.ellipsis-button-dropdown {
+  .circular-button {
+    border: 1px solid $icon-color !important;
+    border-radius: 10em !important;
+    height: 30.5px !important;
+    width: 30.5px !important;
+    &.button >.icon {
+      margin-top: -3px !important;
+    }
+    i.icon.ellipsis.vertical {
+      display: inline-block !important;
+      width: 100% !important;
+      color: $icon-color-circular !important;
+    }
+  }
+  i {
+    color: $icon-color !important;
+  }
+}

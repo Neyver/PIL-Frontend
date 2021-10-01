@@ -1,0 +1,64 @@
+@import '../../scss/_colors.scss';
+
+.confirm-change-modal {
+  .actions {
+    .button {
+      height: 50px !important;
+      width: 180px !important;
+      font-size: 22px !important;
+      background-color: $button-cancel !important;
+    }
+    >.primary {
+      background-color: $color-blue !important;
+    }
+  }
+  .confirm-body-content {
+    background: $background-form !important;
+    height: 217px !important;
+    padding-right: 84px !important;
+    padding-top: 66px !important;
+    padding-left: 84px !important;
+    >.ui.padded.middle.aligned.two.column.grid {
+      >.two.wide.column{
+        >i {
+          font-size: 4.75em;
+          margin-left: -47px;
+          margin-top: -36px;
+          color: $color-icon;
+        }
+      }
+    }
+  }
+}
+
+.ui.tiny.modal.transition.visible.active.confirm-change-modal {
+  width: 593px !important;
+  height: 343px !important;
+}
+
+.ui.tiny.modal.transition.visible.active.confirm-change-modal.discard {
+  width: 599px !important;
+  height: 319px !important;
+  >.actions {
+    height: 112px;
+    >.primary {
+      background-color: $color-blue !important;
+    }
+  }
+  .confirm-body-content { 
+    padding: 63px 70px 50px 70px !important;
+    margin-bottom: 0px;
+    height: 207px !important;
+    >.ui.padded.middle.aligned.two.column.grid {
+      >.fourteen.wide.column {
+        padding-right: 100px !important;
+      }
+      >.two.wide.column{
+        >i {
+          padding-top: 5px;
+          font-size: 52px !important;
+        }
+      }
+    }
+  }
+}
